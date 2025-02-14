@@ -1,0 +1,395 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #1b0337;
+  height: 100vh;
+}
+
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+/* ESTILO DO CABEÇALHO */
+
+header{
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px #7700ff;
+}
+
+header > .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a{
+  color: #7b7979;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+  font-size: 20px;
+}
+
+header a:hover{
+  color: #ffff;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+header nav ul{
+  list-style-type: none;
+  font-weight: 550;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 180px;
+}
+
+header .usuario{
+  padding: 10px 40px;
+  cursor: pointer;
+  display: inline-block;
+
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre o ícone e o botão */
+}
+
+#specialButton {
+  position: relative;
+  top: -1px;
+  left: 20px;
+  padding: 2px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #7700ff;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffff;
+  transition: .2s;
+
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.usuario .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #7406f1}
+
+header .usuario:hover .dropdown-content {
+  display: block;
+  text-decoration: none;
+}
+
+header .usuario:hover .dropbtn {
+  background-color: none;
+  opacity: 0.9; /* Efeito ao passar o mouse (opcional) */
+}
+
+/*header .usuario img:hover{
+  box-shadow: 0px 0px 8px #2b0458;
+
+}*/
+
+
+/* ESTILO DO TOPO DO SITE*/
+
+section.topo-do-site{
+  padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.topo-do-site h1{
+  color: #ffff;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+  color: #7b08ff;
+  font-size: 60px;
+}
+
+.topo-do-site .txt-topo-site p{
+  color: #ffff;
+  margin: 45px 0;
+}
+
+.topo-do-site .txt-topo-site p span{
+  color: #7700ff;
+}
+
+.loja button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #7700ff;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #ffff;
+  transition: .2s;
+}
+
+.loja button:hover{
+  box-shadow: 0px 0px 8px #2b0458;
+  transform: scale(1.05);
+  opacity: 0.6;
+}
+
+.topo-do-site .img-topo-site img{
+  position: relative;
+  width: 650px;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+  0%{
+      top: 0;
+  }
+  100%{
+      top: 30px;
+  }
+}
+
+/*ESTILO DAS PROMOÇÕES*/
+
+section.promocoes{
+  padding: 40px 4%;
+}
+
+.promocoes .promocoes-jogos img{
+  position: relative;
+  padding: 10px;
+  width: 225px;
+  align-items: center;
+  justify-content: space-between;
+  transition: .2s;
+}
+
+.promocoes .promocoes-jogos img:hover{
+  box-shadow: 0px 0px 8px #2b0458;
+  transform: scale(1.05);
+}
+
+section .interface h2{
+  color: #ffff;
+  font-size: 38px;
+  text-align: center;
+}
+
+section .interface h2 span{
+  color: #7b08ff;
+  font-size: 38px;
+  text-align: center;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer{
+  padding: 60px 4%;
+  box-shadow: 0 0 40px 10px #7700ff;
+}
+
+footer .flex{
+  justify-content: space-between;
+}
+
+.redesociais button{
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #7700ff;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #ffff;
+  transition: .2s;
+}
+
+.redesociais button:hover{
+  box-shadow: 0px 0px 8px #2b0458;
+  transform: scale(1.05);
+}
+
+.redesociaismob button{
+  display: none;
+}
+
+footer .line-footer p{
+  color: #ffff;
+  text-decoration: none;
+}
+
+footer .line-footer a{
+  color: #ffff;
+  text-decoration: none;
+}
+
+footer .line-footer a:hover{
+  color: #ffff;
+  text-decoration: underline;
+}
+
+.linkedin-container {
+  position: relative; /* Mantém o selo dentro do contexto do li */
+  display: inline-block;
+}
+
+.linkedin-selo {
+  display: none;
+  position: absolute;
+  top: 30px; /* Ajuste conforme necessário */
+  left: 0;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000; /* Garante que apareça acima de outros elementos */
+}
+
+.linkedin-container:hover .linkedin-selo {
+  display: block;
+}
+
+
+@media screen and (max-width: 1020px){
+
+  /* CLASSES GERAIS */
+  .flex{
+      flex-direction: column;
+  }
+
+  .topo-do-site .flex{
+      flex-direction: column-reverse;
+  }
+  
+  /* CABEÇALHO */
+
+  header nav ul li{
+      display: inline-block;
+      padding: 0 50px;
+  }
+
+  .dropdown-content {
+    min-width: 130px;
+  }
+
+  .usuario .dropdown-content a {
+    font-size: 14px;
+  }
+
+  #specialButton {
+    position: relative;
+    top: 70px;
+    left: -110px;
+    padding: 2px 10px;
+  }
+  
+
+
+  /* TOPO DO SITE */
+
+  section.topo-do-site .flex{
+      gap: 40px;
+  }
+
+  section.topo-do-site{
+      padding: 20px 8%;
+  }
+
+  .topo-do-site h1{
+      text-align: center;
+  }
+
+  .topo-do-site .txt-topo-site p{
+      text-align: center;
+  }
+
+  .topo-do-site .img-topo-site img{
+      width: 100%;
+  }
+
+  .loja {
+      display: flex;
+      justify-content: center; /* Centraliza horizontalmente */
+      align-items: center; /* Centraliza verticalmente */
+  }
+
+  /* PROMOCOES */
+  .promocoes .promocoes-jogos {
+      display: flex;
+      justify-content: center; /* Centraliza horizontalmente */
+      align-items: center; /* Centraliza verticalmente (caso necessário) */
+      flex-wrap: wrap; /* Permite que as imagens fiquem em múltiplas linhas, se necessário */
+  }
+  
+  /* RODAPE */
+
+  .footer .flex{
+      flex-direction: column;
+      gap: 50px;
+  }
+
+  .redesociais button{
+      display: none;
+  }
+
+  .redesociaismob button{
+      padding: 10px 40px;
+      font-size: 14px;
+      font-weight: 600;
+      background-color: #7700ff;
+      border: 0;
+      border-radius: 30px;
+      cursor: pointer;
+      color: #ffff;
+      transition: .2s;
+      display: inline-block;
+  }
+
+  .redesociaismob button:hover{
+      box-shadow: 0px 0px 8px #2b0458;
+      transform: scale(1.05);
+  }
+  
+}

@@ -1,0 +1,149 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-color: #1b0337;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: #ffff;
+  border-radius: 14px;
+  margin: 14px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: 0 3px 5px transparent;
+  overflow: hidden;
+}
+
+.header{
+  background-color: #7002d0;
+  padding: 24px 57px 24px 33px;
+  text-align: center;
+  color: #ffff;
+}
+
+.header img{
+  position: relative;
+  width: 13%;
+  transition: .2s;
+  margin-left: 35px;
+  padding-bottom: 4px;
+}
+
+#ListaEndereco{
+  position: absolute;
+  top: 80%;
+  left: 27.3%;
+  background-color: #e60808;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  margin: 5px 350px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  #lista-enderecos {
+  display: flex; /* Ativa o Flexbox */
+  flex-wrap: wrap; /* Permite que os itens envolvam para a próxima linha */
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+  padding: 0; /* Remove o preenchimento padrão */
+  list-style-type: none; /* Remove os marcadores */
+  max-width: 800px; /* Define uma largura máxima para a lista */
+  margin: 0 auto; /* Centraliza a lista na página */
+  margin-left: 9%;
+}
+
+
+#lista-enderecos li {
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+  border-radius: 8px; /* Bordas arredondadas */
+  margin: 10px; /* Espaço entre os itens */
+  padding: 15px; /* Preenchimento interno */
+  transition: background-color 0.3s; /* Efeito de transição */
+  flex: 1 1 30%; /* Faz os itens crescerem e ocuparem 30% do espaço */
+  box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho */
+}
+
+#lista-enderecos li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Efeito ao passar o mouse */
+}
+
+#lista-enderecos h3 {
+  margin: 0; /* Remove margem padrão */
+  font-size: 1.5em; /* Tamanho da fonte do título */
+}
+
+#lista-enderecos p {
+    margin: 5px 0; /* Margem entre os parágrafos */
+    font-size: 1em; /* Tamanho da fonte dos parágrafos */
+}
+  
+#voltar-endereco{
+  position: relative;
+  top: 0px;
+  left: 90px;
+  background-color: #5519a3;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  margin: 1px 350px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#voltar-endereco:hover{
+  opacity: 0.9;
+}
+
+.edit-button {
+  background-color: #6621b4; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border: none; /* Remove a borda padrão */
+  border-radius: 8px; /* Arredonda as bordas */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho da fonte */
+  cursor: pointer; /* Mostra o cursor de ponteiro ao passar */
+  transition: background-color 0.3s ease; /* Efeito de transição */
+  margin-top: 10px; /* Espaçamento acima */
+}
+
+.edit-button:hover {
+  background-color: #5512a1; /* Cor de fundo ao passar o mouse */
+  opacity: 0.9; /* Leve opacidade para o efeito hover */
+}
+
+h2 {
+  margin-left: 35px;
+  padding-bottom: 8px;
+}
+
+.delete-button {
+  font-size: 16px;
+  width: 5px;
+  height: 19px;
+  display: flex;
+  justify-content: center; /* Centraliza o ícone horizontalmente */
+  align-items: center; /* Centraliza o ícone verticalmente */
+  background-color: transparent; /* Fundo transparente */
+  border: none; /* Remove borda */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.delete-button:hover {
+  opacity: 0.5; /* Leve opacidade para o efeito hover */
+  transition: background-color 0.3s; /* Efeito de transição */
+}
