@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const enderecoId = params.get('id');
 
-const url = `https://go-wash-api.onrender.com/api/auth/address/${enderecoId}`;
+const url = `https://go-wash-api.onrender.com/api/.../.../${enderecoId}`;
 
 async function carregarEndereco() {
     const token = localStorage.getItem('access_token');
