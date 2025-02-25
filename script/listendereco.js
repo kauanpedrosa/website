@@ -1,4 +1,4 @@
-const url = 'https://go-wash-api.onrender.com/api/auth/address';
+const url = 'https://go-wash-api.onrender.com/api/.../...';
 
 async function listarEnderecos() {
     const token = localStorage.getItem('access_token');
