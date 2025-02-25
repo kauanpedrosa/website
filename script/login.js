@@ -1,4 +1,4 @@
-const url = 'https://go-wash-api.onrender.com/api/login';
+const url = 'https://go-wash-api.onrender.com/.../...';
 
 async function login() {
     const button = document.getElementById("loginButton");
