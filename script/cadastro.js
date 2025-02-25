@@ -1,4 +1,4 @@
-const url = 'https://go-wash-api.onrender.com/api/user';
+const url = 'https://go-wash-api.onrender.com/.../...';
 
 async function cadastro() {
     const button = document.getElementById("cadastrar-btn");
