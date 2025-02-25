@@ -7,7 +7,7 @@ async function deletarEndereco(enderecoId) {
     }
 
     try {
-        const response = await fetch(`https://go-wash-api.onrender.com/api/auth/address/${enderecoId}`, {
+        const response = await fetch(`https://go-wash-api.onrender.com/api/.../.../${enderecoId}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`,
